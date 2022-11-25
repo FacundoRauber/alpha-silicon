@@ -1,0 +1,30 @@
+{
+  "name": "alpha-silicon",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacundoRauber/alpha-silicon.git"
+  },
+  "keywords": [
+    "silicon",
+    "misiones",
+    "fullstackjs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacundoRauber/alpha-silicon/issues"
+  },
+  "homepage": "https://github.com/FacundoRauber/alpha-silicon#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "rootpath": "^0.1.2"
+  }
+}
