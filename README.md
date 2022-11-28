@@ -53,7 +53,7 @@ $ node index.js
         "fecha_nacimiento": "1998-02-03",
         "estado": "0"
     }
-```json
+```
 ### Para eliminar fisicamente una persona (en la base de datos)
 DELETE http://localhost:8080/api/persona/del/_numeroDeDNI_
 - _numeroDeDNI_: es el numero de DNI de un a persona que esta guardada en la base de datos.
