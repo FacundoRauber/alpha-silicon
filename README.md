@@ -32,6 +32,7 @@ $ node index.js
 
 ### Para insertar personas:
 -- POST http://localhost:8080/api/persona
+```json
     {
         "nombre": "Gabriela",
         "apellido": "Gutierres",
@@ -39,11 +40,12 @@ $ node index.js
        "sexo": "M",
         "fecha_nacimiento": "1998-02-03" 
     }
-    
+```
 ### Para editar personas:
 -- PUT http://localhost:8080/api/persona/_numeroDeDNI_
 - _numeroDeDNI_: es el numero de DNI de un a persona que esta guardada en la base de datos.
-    {
+```json
+{
         "nombre": "Gabriela",
         "apellido": "Gutierres",
         "dni": "32337879",
@@ -51,7 +53,7 @@ $ node index.js
         "fecha_nacimiento": "1998-02-03",
         "estado": "0"
     }
-
+```json
 ### Para eliminar fisicamente una persona (en la base de datos)
 DELETE http://localhost:8080/api/persona/del/_numeroDeDNI_
 - _numeroDeDNI_: es el numero de DNI de un a persona que esta guardada en la base de datos.
