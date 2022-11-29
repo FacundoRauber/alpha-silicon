@@ -9,12 +9,13 @@ $ git clone git@github.com:FacundoRauber/alpha-silicon.git
 - Dentro de l carpeta /alpha-silicon instalar los paquetes necesarios:
 ```sh
 $ npm init
-$ npm install express mysql morgan rootpath
+$ npm install express mysql morgan rootpath nodemon
 ```
 - Ejecutar:
 ```sh
-$ node index.js
+$ npm run dev
 ```
+
 
 ## Coinsideraciones
 - En el archivo config.json se encuentran las configuraciones para que el sistema se conecte al motor de la base de datos y para configurar los puertos de escucha del servidor web.

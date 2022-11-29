@@ -145,8 +145,6 @@ personaDb.delete = function(dni,funCallback){
     });
 }
 
-
-
 /**
  *  
  * @param {*} idpersonas 
