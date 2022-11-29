@@ -5,7 +5,7 @@
 ```sh
 $ git clone git@github.com:FacundoRauber/alpha-silicon.git
 ```
-- Restaurar la copia de la base de datos
+- Restaurar la copia de la base de datos. La mism se encuentra dentro de la carpeta _backupdb_ 
 - Dentro de l carpeta /alpha-silicon instalar los paquetes necesarios:
 ```sh
 $ npm init
