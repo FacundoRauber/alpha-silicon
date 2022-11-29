@@ -147,7 +147,7 @@ personaDb.delete = function(dni,funCallback){
 
 /**
  *  
- * @param {*} idpersonas 
+ * @param {*} idpersona 
  * @param {*} funCallback
  *         retorna:
  *              code = 1 (EXITO)
@@ -155,8 +155,8 @@ personaDb.delete = function(dni,funCallback){
  *              code = 3 (ERROR)
  * 
  */
-personaDb.logdelete = function (idpersonas, funCallback) {
-    connection.query("UPDATE personas SET estado = 0 WHERE idpersonas = ?",idpersonas, function (err, result, fields) {
+personaDb.logdelete = function (idpersona, funCallback) {
+    connection.query("UPDATE personas SET estado = 0 WHERE idpersona = ?",idpersona, function (err, result, fields) {
         if (err) {
             funCallback({
                 code:3,
@@ -168,14 +168,14 @@ personaDb.logdelete = function (idpersonas, funCallback) {
             if (result.affectedRows == 0) {
                 funCallback({
                     code:2,
-                    message: `No se encontro el id  ${idpersonas} de la persona`,
+                    message: `No se encontro el id  ${idpersona} de la persona`,
                     detail: result
                 }); 
             } else {
          //       console.error(err);
                     funCallback({
                     code:1,
-                    message: `Se modifico la persona con el id ${idpersonas}`,
+                    message: `Se modifico la persona con el id ${idpersona}`,
                     detail: result
                 }); 
             }
