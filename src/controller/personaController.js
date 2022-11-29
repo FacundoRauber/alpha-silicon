@@ -15,7 +15,7 @@ app.put('/:dni', update);
 
 app.delete('/del/:dni', eliminar);
 
-app.delete('/:idpersonas', eliminacionlogica);
+app.delete('/:idpersona', eliminacionlogica);
 
 // Metododo para listar todas las personas 
 function getAll(req, res) {
@@ -75,7 +75,7 @@ function eliminar(req, res) {
 }
 // Metodo par eliminar personas cambiando el estado a 0
 function eliminacionlogica(req, res) {
-    personaDb.logdelete(req.params.idpersonas, function (result) {
+    personaDb.logdelete(req.params.idpersona, function (result) {
         if (result.code == 3) {
             res.status(500).send(err);
         } else if (result.code == 2) {
